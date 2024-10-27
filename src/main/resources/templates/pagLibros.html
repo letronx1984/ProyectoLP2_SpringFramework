@@ -30,12 +30,12 @@
             <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#agregarProductoModal">
                 Registrar Libro
             </button>
-            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#agregarCategoriaModal">
-                Agregar Categoría
-            </button>
+     
         </div>
         <div>
-            <a th:href="@{/libro/registrar}" class="btn btn-primary">Generar PDF</a>
+            <a target="_blank" th:href="@{/libro/pdf_libros}">
+                            Generar PDF <img width="15" height="15" src="img/iconos/iconoPDF.png">
+                            </a> 
         </div>
     </div>
     <table class="table mt-4">
@@ -155,28 +155,6 @@
     </div>
 </div>
 
-<!-- Modal para Agregar Categoría -->
-<div class="modal fade" id="agregarCategoriaModal" tabindex="-1" role="dialog" aria-labelledby="agregarCategoriaModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="agregarCategoriaModalLabel">Agregar Categoría</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <form th:action="@{/categoria/registrar}" method="post">
-                    <div class="form-group">
-                        <label for="nombreCategoria">Nombre de la Categoría</label>
-                        <input type="text" class="form-control" id="nombreCategoria" name="nombreCategoria" required>
-                    </div>
-                    <!-- Agrega más campos según sea necesario -->
-                    <button type="submit" class="btn btn-primary">Guardar</button>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
+
 </body>
 </html>

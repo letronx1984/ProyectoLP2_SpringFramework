@@ -18,7 +18,7 @@
         <input type="checkbox" id="nav_check" hidden>
         <nav>
             <ul>
-                <li><a th:href="@{/lisbro/listado}" style="text-decoration: none;">Catálogo</a></li>
+                <li><a th:href="@{/libro/listado}" style="text-decoration: none;">Catálogo</a></li>
                 <li><a th:href="@{/mantenimiento}" style="text-decoration: none;">Mantenimiento</a></li>
                 <li><a th:href="@{/reportes}" style="text-decoration: none;">Reportes</a></li>
                 <li><a href="#" class="active" style="text-decoration: none;">
@@ -44,6 +44,7 @@
                     </div>
                     <br>
                     <div class="col-12">
+                    	<a th:href="@{/categoria/registrar}" class="btn btn-outline-primary">Registrar</a>
                         <a th:href="@{/mantenimiento}" class="btn btn-outline-warning">Regresar</a>
                     </div>
                     <br> <br>

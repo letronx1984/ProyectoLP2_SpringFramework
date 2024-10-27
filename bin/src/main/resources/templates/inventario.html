@@ -18,7 +18,7 @@
         <input type="checkbox" id="nav_check" hidden>
         <nav>
             <ul>
-                <li><a th:href="@{/libros/listado}" style="text-decoration: none;">Catálogo</a></li>
+                <li><a th:href="@{/libro/listado}" style="text-decoration: none;">Catálogo</a></li>
                 <li><a th:href="@{/mantenimiento}" style="text-decoration: none;">Mantenimiento</a></li>
                 <li><a th:href="@{/reportes}" style="text-decoration: none;">Reportes</a></li>
                 <li>
@@ -47,10 +47,10 @@
                     <div class="col-12">
                         
                    
-                            <a target="_blank" th:href="@{/pdf_inventario}">
+                            <a target="_blank" th:href="@{/pdf_inventario}" class="btn btn-outline-danger">
                             Descargar Reporte PDF <img width="15" height="15" src="img/iconos/iconoPDF.png">
                             </a> 
-							<a th:href="@{/reportes}" class="btn btn-danger">Regresar</a>
+							<a th:href="@{/reportes}" class="btn btn-outline-warning">Regresar</a>
                       
 
                         <div>

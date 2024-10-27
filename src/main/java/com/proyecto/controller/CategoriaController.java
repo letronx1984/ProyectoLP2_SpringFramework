@@ -26,7 +26,11 @@ public class CategoriaController {
         return "listCategorias"; 
     }
 
-    
+    @GetMapping("/registrar")
+	public String vistaRegistrarEditorial(Model model) {
+		model.addAttribute("categoria", new CategoriaEntity());
+		return "categoriaRegister";
+	}
 
     @PostMapping("/registrar")
     public String registrarCategoria(@ModelAttribute CategoriaEntity categoria) {
